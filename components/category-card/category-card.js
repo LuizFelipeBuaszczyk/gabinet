@@ -5,7 +5,7 @@ document.head.append(stylesheet);
 
 /**
  * Card com link para a página de uma categoria.
- * O link é relativo à pasta pages/, onde ficam todas as páginas.
+ * O link é relativo à pasta de uma página dentro de pages/.
  *
  * @param {object} props
  * @param {string} props.slug Identificador da categoria (ex.: "livros").
@@ -15,7 +15,7 @@ document.head.append(stylesheet);
 export function CategoryCard({ slug, name }) {
   const link = document.createElement("a");
   link.className = "category-card";
-  link.href = `${slug}.html`;
+  link.href = `../${slug}/${slug}.html`;
   link.dataset.category = slug;
 
   const title = document.createElement("h3");

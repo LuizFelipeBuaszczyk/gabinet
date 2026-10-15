@@ -7,7 +7,7 @@ document.head.append(stylesheet);
 
 /**
  * Cabeçalho do site com o link para o início e a navegação principal.
- * Os links são relativos à pasta pages/, onde ficam todas as páginas.
+ * Os links são relativos à pasta de uma página dentro de pages/.
  *
  * @param {object} [props]
  * @param {string} [props.current] Slug da categoria da página atual.
@@ -22,7 +22,7 @@ export function Header({ current } = {}) {
 
   const homeLink = document.createElement("a");
   homeLink.className = "header__home";
-  homeLink.href = "home.html";
+  homeLink.href = "../home/home.html";
   homeLink.textContent = "Gabinet";
 
   const nav = document.createElement("nav");
@@ -37,7 +37,7 @@ export function Header({ current } = {}) {
 
     const link = document.createElement("a");
     link.className = "header__link";
-    link.href = `${slug}.html`;
+    link.href = `../${slug}/${slug}.html`;
     link.textContent = name;
 
     if (slug === current) {
