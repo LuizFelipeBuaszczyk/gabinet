@@ -7,17 +7,7 @@
   <title>Jogos · Gabinet</title>
 </head>
 <body>
-  <header>
-    <a href="../index.html">Gabinet</a>
-    <nav aria-label="Principal">
-      <ul>
-        <li><a href="livros.html">Livros</a></li>
-        <li><a href="series.html">Séries</a></li>
-        <li><a href="animes.html">Animes</a></li>
-        <li><a href="jogos.html" aria-current="page">Jogos</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div id="header"></div>
 
   <main id="conteudo">
     <section>
@@ -28,8 +18,14 @@
     </section>
   </main>
 
-  <footer>
-    <p>Gabinet - backlog pessoal de livros, séries, animes e jogos.</p>
-  </footer>
+  <div id="footer"></div>
+
+  <script type="module">
+    import { Header } from "../components/header/header.js";
+    import { Footer } from "../components/footer/footer.js";
+
+    document.getElementById("header").replaceWith(Header({ basePath: "../", current: "jogos" }));
+    document.getElementById("footer").replaceWith(Footer());
+  </script>
 </body>
 </html>
