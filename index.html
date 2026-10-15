@@ -3,41 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="0; url=pages/home.html">
+  <link rel="canonical" href="pages/home.html">
   <title>Gabinet</title>
 </head>
 <body>
-  <div id="header"></div>
-
-  <main id="conteudo">
-    <section>
-      <h1>Meu backlog</h1>
-    </section>
-
-    <section aria-labelledby="categorias-titulo">
-      <h2 id="categorias-titulo">Categorias</h2>
-      <ul id="category-list"></ul>
-    </section>
-  </main>
-
-  <div id="footer"></div>
-
-  <script type="module">
-    import { Header } from "./components/header/header.js";
-    import { Footer } from "./components/footer/footer.js";
-    import { CategoryCard } from "./components/category-card/category-card.js";
-    import { categories } from "./data/categories.js";
-
-    document.getElementById("header").replaceWith(Header());
-
-    const categoryList = document.getElementById("category-list");
-
-    for (const { slug, name } of categories) {
-      const item = document.createElement("li");
-      item.append(CategoryCard({ name, href: `pages/${slug}.html` }));
-      categoryList.append(item);
-    }
-
-    document.getElementById("footer").replaceWith(Footer());
-  </script>
+  <p><a href="pages/home.html">Ir para o Gabinet</a></p>
 </body>
 </html>

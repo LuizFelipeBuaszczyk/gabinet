@@ -3,19 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Séries no Gabinet — Temporadas maratonadas, abandonadas e as próximas da lista.">
   <title>Séries · Gabinet</title>
+  <link rel="stylesheet" href="../root.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="series.css">
 </head>
 <body>
   <div id="header"></div>
 
-  <main id="conteudo">
-    <section>
-      <p>Em breve</p>
-      <h1>Séries</h1>
-      <p>Temporadas maratonadas, abandonadas e as próximas da lista. Esta seção ainda está em construção.</p>
-      <a href="../index.html">← Voltar ao início</a>
-    </section>
+  <main id="conteudo" class="page">
+     <h1>Séries</h1> 
   </main>
 
   <div id="footer"></div>
@@ -24,7 +21,7 @@
     import { Header } from "../components/header/header.js";
     import { Footer } from "../components/footer/footer.js";
 
-    document.getElementById("header").replaceWith(Header({ basePath: "../", current: "series" }));
+    document.getElementById("header").replaceWith(Header({ current: "series" }));
     document.getElementById("footer").replaceWith(Footer());
   </script>
 </body>

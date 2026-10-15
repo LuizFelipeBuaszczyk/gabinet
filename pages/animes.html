@@ -3,19 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Animes no Gabinet — Animes acompanhados, temporadas favoritas e os que ainda vou começar.">
   <title>Animes · Gabinet</title>
+  <link rel="stylesheet" href="../root.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="animes.css">
 </head>
 <body>
   <div id="header"></div>
 
-  <main id="conteudo">
-    <section>
-      <p>Em breve</p>
-      <h1>Animes</h1>
-      <p>Animes acompanhados, temporadas favoritas e os que ainda vou começar. Esta seção ainda está em construção.</p>
-      <a href="../index.html">← Voltar ao início</a>
-    </section>
+  <main id="conteudo" class="page">
+    <h1>Animes</h1> 
   </main>
 
   <div id="footer"></div>
@@ -24,7 +21,7 @@
     import { Header } from "../components/header/header.js";
     import { Footer } from "../components/footer/footer.js";
 
-    document.getElementById("header").replaceWith(Header({ basePath: "../", current: "animes" }));
+    document.getElementById("header").replaceWith(Header({ current: "animes" }));
     document.getElementById("footer").replaceWith(Footer());
   </script>
 </body>

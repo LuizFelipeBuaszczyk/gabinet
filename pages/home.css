@@ -1,0 +1,29 @@
+/* ==========================================================================
+   Home — landing page
+   ========================================================================== */
+
+.hero {
+  padding-block: var(--space-16) var(--space-12);
+  text-align: center;
+}
+
+.hero__title {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-black);
+  letter-spacing: -0.02em;
+}
+
+.categories {
+  padding-bottom: var(--space-16);
+}
+
+.categories__title {
+  margin-bottom: var(--space-6);
+  font-size: var(--font-size-lg);
+}
+
+.category-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-6);
+}
