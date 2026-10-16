@@ -24,8 +24,6 @@ export function AnimeCard({ slug, title, image, episodes, review, rating }) {
   cover.className = "anime-card__cover";
   cover.src = new URL(`../../${image}`, import.meta.url);
   cover.alt = title;
-  cover.width = 200;
-  cover.height = 400;
   cover.loading = "lazy";
 
   const body = document.createElement("div");
