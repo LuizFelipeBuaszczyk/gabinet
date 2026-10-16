@@ -5,3 +5,15 @@
 :root {
   --page-accent: var(--color-animes);
 }
+
+.anime-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 520px), 1fr));
+  gap: var(--space-6);
+  padding-block: var(--space-6) var(--space-16);
+}
+
+.anime-list__empty {
+  padding-block: var(--space-6);
+  color: var(--color-text-muted);
+}
