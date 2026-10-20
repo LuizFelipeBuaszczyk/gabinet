@@ -1,3 +1,5 @@
+import { ReviewText } from "../review-text/review-text.js";
+
 const stylesheet = document.createElement("link");
 stylesheet.rel = "stylesheet";
 stylesheet.href = new URL("./game-card.css", import.meta.url);
@@ -49,10 +51,7 @@ export function GameCard({ slug, title, image, platform, hours, review, rating }
   body.append(heading, platformLabel, hoursLabel, score);
 
   if (review) {
-    const reviewText = document.createElement("p");
-    reviewText.className = "game-card__review";
-    reviewText.textContent = review;
-    body.append(reviewText);
+    body.append(ReviewText({ text: review, className: "game-card__review" }));
   }
 
   card.append(cover, body);

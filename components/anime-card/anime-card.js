@@ -1,3 +1,5 @@
+import { ReviewText } from "../review-text/review-text.js";
+
 const stylesheet = document.createElement("link");
 stylesheet.rel = "stylesheet";
 stylesheet.href = new URL("./anime-card.css", import.meta.url);
@@ -49,10 +51,7 @@ export function AnimeCard({ slug, title, image, episodes, review, rating }) {
   body.append(heading, progressLabel, progress, score);
 
   if (review) {
-    const reviewText = document.createElement("p");
-    reviewText.className = "anime-card__review";
-    reviewText.textContent = review;
-    body.append(reviewText);
+    body.append(ReviewText({ text: review, className: "anime-card__review" }));
   }
 
   card.append(cover, body);

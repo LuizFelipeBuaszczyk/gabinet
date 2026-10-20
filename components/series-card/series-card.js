@@ -1,3 +1,5 @@
+import { ReviewText } from "../review-text/review-text.js";
+
 const stylesheet = document.createElement("link");
 stylesheet.rel = "stylesheet";
 stylesheet.href = new URL("./series-card.css", import.meta.url);
@@ -54,10 +56,7 @@ export function SeriesCard({ slug, title, image, seasons, episodes, review, rati
   body.append(heading, seasonsLabel, progressLabel, progress, score);
 
   if (review) {
-    const reviewText = document.createElement("p");
-    reviewText.className = "series-card__review";
-    reviewText.textContent = review;
-    body.append(reviewText);
+    body.append(ReviewText({ text: review, className: "series-card__review" }));
   }
 
   card.append(cover, body);

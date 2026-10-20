@@ -1,0 +1,13 @@
+.review-text__toggle {
+  margin-top: var(--space-1);
+  padding: 0;
+  background: none;
+  border: none;
+  font: inherit;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  font-style: normal;
+  color: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+}

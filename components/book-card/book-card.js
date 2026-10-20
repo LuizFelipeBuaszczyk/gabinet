@@ -1,3 +1,5 @@
+import { ReviewText } from "../review-text/review-text.js";
+
 const stylesheet = document.createElement("link");
 stylesheet.rel = "stylesheet";
 stylesheet.href = new URL("./book-card.css", import.meta.url);
@@ -54,10 +56,7 @@ export function BookCard({ slug, title, image, author, pages, review, rating }) 
   body.append(heading, authorLabel, progressLabel, progress, score);
 
   if (review) {
-    const reviewText = document.createElement("p");
-    reviewText.className = "book-card__review";
-    reviewText.textContent = review;
-    body.append(reviewText);
+    body.append(ReviewText({ text: review, className: "book-card__review" }));
   }
 
   card.append(cover, body);
