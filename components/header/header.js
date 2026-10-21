@@ -1,5 +1,5 @@
 import { loadStylesheet } from "../load-stylesheet.js";
-import { categories } from "../../data/categories.js";
+import categories from "../../data/categories.json" with { type: "json" };
 
 loadStylesheet(new URL("./header.css", import.meta.url));
 

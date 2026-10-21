@@ -1,11 +1,10 @@
 import { renderLayout } from "../layout.js";
 import { BookCard } from "../../components/book-card/book-card.js";
-import { getLivros } from "../../data/livros.js";
+import livros from "../../data/livros.json" with { type: "json" };
 
 renderLayout({ current: "livros" });
 
 const livrosList = document.getElementById("livros-list");
-const livros = getLivros();
 
 if (livros.length === 0) {
   const empty = document.createElement("p");

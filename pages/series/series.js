@@ -1,11 +1,10 @@
 import { renderLayout } from "../layout.js";
 import { SeriesCard } from "../../components/series-card/series-card.js";
-import { getSeries } from "../../data/series.js";
+import series from "../../data/series.json" with { type: "json" };
 
 renderLayout({ current: "series" });
 
 const seriesList = document.getElementById("series-list");
-const series = getSeries();
 
 if (series.length === 0) {
   const empty = document.createElement("p");

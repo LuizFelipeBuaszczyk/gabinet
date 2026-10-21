@@ -1,11 +1,10 @@
 import { renderLayout } from "../layout.js";
 import { GameCard } from "../../components/game-card/game-card.js";
-import { getJogos } from "../../data/jogos.js";
+import jogos from "../../data/jogos.json" with { type: "json" };
 
 renderLayout({ current: "jogos" });
 
 const jogosList = document.getElementById("jogos-list");
-const jogos = getJogos();
 
 if (jogos.length === 0) {
   const empty = document.createElement("p");

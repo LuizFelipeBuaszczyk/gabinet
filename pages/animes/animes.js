@@ -1,11 +1,10 @@
 import { renderLayout } from "../layout.js";
 import { AnimeCard } from "../../components/anime-card/anime-card.js";
-import { getAnimes } from "../../data/animes.js";
+import animes from "../../data/animes.json" with { type: "json" };
 
 renderLayout({ current: "animes" });
 
 const animeList = document.getElementById("anime-list");
-const animes = getAnimes();
 
 if (animes.length === 0) {
   const empty = document.createElement("p");

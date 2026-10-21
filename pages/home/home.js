@@ -1,6 +1,6 @@
 import { renderLayout } from "../layout.js";
 import { CategoryCard } from "../../components/category-card/category-card.js";
-import { categories } from "../../data/categories.js";
+import categories from "../../data/categories.json" with { type: "json" };
 
 renderLayout();
 
