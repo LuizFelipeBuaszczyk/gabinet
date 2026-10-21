@@ -84,6 +84,11 @@ body {
   background-color: var(--color-bg);
 }
 
+/* Esconde a página até os estilos dos componentes carregarem (ver pages/layout.js) */
+.is-loading body {
+  visibility: hidden;
+}
+
 ul, ol {
     list-style: none
 }

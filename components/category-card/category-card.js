@@ -1,7 +1,6 @@
-const stylesheet = document.createElement("link");
-stylesheet.rel = "stylesheet";
-stylesheet.href = new URL("./category-card.css", import.meta.url);
-document.head.append(stylesheet);
+import { loadStylesheet } from "../load-stylesheet.js";
+
+loadStylesheet(new URL("./category-card.css", import.meta.url));
 
 /**
  * Card com link para a página de uma categoria.

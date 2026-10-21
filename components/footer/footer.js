@@ -1,7 +1,6 @@
-const stylesheet = document.createElement("link");
-stylesheet.rel = "stylesheet";
-stylesheet.href = new URL("./footer.css", import.meta.url);
-document.head.append(stylesheet);
+import { loadStylesheet } from "../load-stylesheet.js";
+
+loadStylesheet(new URL("./footer.css", import.meta.url));
 
 /**
  * Rodapé do site.

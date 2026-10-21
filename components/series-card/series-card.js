@@ -1,9 +1,7 @@
+import { loadStylesheet } from "../load-stylesheet.js";
 import { ReviewText } from "../review-text/review-text.js";
 
-const stylesheet = document.createElement("link");
-stylesheet.rel = "stylesheet";
-stylesheet.href = new URL("./series-card.css", import.meta.url);
-document.head.append(stylesheet);
+loadStylesheet(new URL("./series-card.css", import.meta.url));
 
 /**
  * Card com os dados de uma série: capa, temporadas, episódios, nota e resenha.

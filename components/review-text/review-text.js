@@ -1,7 +1,6 @@
-const stylesheet = document.createElement("link");
-stylesheet.rel = "stylesheet";
-stylesheet.href = new URL("./review-text.css", import.meta.url);
-document.head.append(stylesheet);
+import { loadStylesheet } from "../load-stylesheet.js";
+
+loadStylesheet(new URL("./review-text.css", import.meta.url));
 
 /**
  * Texto de resenha que é recolhido quando passa do limite de caracteres,

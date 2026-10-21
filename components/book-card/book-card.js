@@ -1,9 +1,7 @@
+import { loadStylesheet } from "../load-stylesheet.js";
 import { ReviewText } from "../review-text/review-text.js";
 
-const stylesheet = document.createElement("link");
-stylesheet.rel = "stylesheet";
-stylesheet.href = new URL("./book-card.css", import.meta.url);
-document.head.append(stylesheet);
+loadStylesheet(new URL("./book-card.css", import.meta.url));
 
 /**
  * Card com os dados de um livro: capa, autor, páginas lidas, nota e resenha.

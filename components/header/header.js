@@ -1,9 +1,7 @@
+import { loadStylesheet } from "../load-stylesheet.js";
 import { categories } from "../../data/categories.js";
 
-const stylesheet = document.createElement("link");
-stylesheet.rel = "stylesheet";
-stylesheet.href = new URL("./header.css", import.meta.url);
-document.head.append(stylesheet);
+loadStylesheet(new URL("./header.css", import.meta.url));
 
 /**
  * Cabeçalho do site com o link para o início e a navegação principal.

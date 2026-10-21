@@ -1,9 +1,7 @@
+import { loadStylesheet } from "../load-stylesheet.js";
 import { ReviewText } from "../review-text/review-text.js";
 
-const stylesheet = document.createElement("link");
-stylesheet.rel = "stylesheet";
-stylesheet.href = new URL("./game-card.css", import.meta.url);
-document.head.append(stylesheet);
+loadStylesheet(new URL("./game-card.css", import.meta.url));
 
 /**
  * Card com os dados de um jogo: capa, plataforma, horas jogadas, nota e resenha.
