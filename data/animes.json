@@ -42,5 +42,27 @@
     },
     "review": "Eighty Six é um anime que tem um ar de Segunda Guerra Mundial. A história se baseia em dois cenários totalmente distintos (porém unidos). O primeiro cenário é onde a Vladilena Milizé está, basicamente o lado do 'opressor', o anime mostra como a sociedade é manipulada e pode ser cruel com pessoas de diferentes características, esse cenário lembra muito extremistas do século passado. O segundo lado é o lado 'oprimido' onde o personagem Shinei Nouzen vive e são mostradas as dificuldades que eles sofrem.",
     "rating": 9.1
+  },
+  {
+    "slug": "vinland-saga",
+    "title": "Vinland Saga",
+    "image": "data/images/animes/vinland_saga.webp",
+    "episodes": {
+      "total": 48,
+      "watched": 48
+    },
+    "review": "Sinceramente este é o único anime que até minha mãe assistiu, a evolução dos personagens neste anime é incrível. A primeira temporada tem muita ação e eu considero que o último episódio é um dos melhores episódios que eu já assisti, a segunda temporada muda totalmente o ritmo do anime, por este motivo muita gente não gostou.\n\nEu realmente gostei do anime nas duas temporadas e definitivamente eu curti que o anime não seguiu o óbvio.\n\n'Todos somos escravos de algo' - Askeladd",
+    "rating": 9.0
+  },
+  {
+    "slug": "solo-leveling",
+    "title": "Solo Leveling",
+    "image": "data/images/animes/solo_leveling.webp",
+    "episodes": {
+      "total": 25,
+      "watched": 25
+    },
+    "review": "Quando eu assisti Solo leveling eu ainda não curtia tanto anime, então eu cheguei com espectativas bem baixas, embora antes de assister tive que escutar de alguns amigos a seguinte frase: 'Eu quero encontrar algum louco que não goste de Solo Leveling', pois então, ele encontrou.\n\nAcho que Solo Leveling é um anime que você precisa assistir como se fosse um rambo, porém quando eu assisti eu não estava nessa vibe. Então as minhas baixas espectativas se mantiveram, na minha opinião a história do anime é quase nula, o que importa é a evolução gamer e as lutas, então se você quiser apenas passar o tempo provavelmente você terá uma experiência melhor que a minha.",
+    "rating": 5.0
   }
 ]
